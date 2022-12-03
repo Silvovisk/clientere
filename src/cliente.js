@@ -1,7 +1,7 @@
 export class Cliente { 
-    constructor(nome, tel, dataCompra){ 
+    constructor(nome, tel, bairro){ 
         this.nome = nome;
         this.tel = tel;
-        this.dataCompra = dataCompra; 
+        this.bairro = bairro; 
     }
 }
