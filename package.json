@@ -1,0 +1,22 @@
+{
+  "name": "clientere",
+  "version": "1.0.0",
+  "description": "Projeto Final do Curso de Imersão JS - Reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silvovisk/clientere.git"
+  },
+  "author": "Silvia Vasconcelos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Silvovisk/clientere/issues"
+  },
+  "homepage": "https://github.com/Silvovisk/clientere#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
