@@ -18,18 +18,16 @@ describe('Modulo da Compra', () => {
     });
 
     test('Instância da compra', () => {
-        console.log("Cliente ", Cliente.listaClientes);
-        console.log("Produtos  ", Produto.listaProdutos);
-        // fazer testes separado de criações de compras
-        const compra1 = new Compra(1,[{cod:'1122', qtd:2},{cod:'5512', qtd:1}]);
-        const compra2 = new Compra(2,[{cod:'1313', qtd:2}]);
-        const compra3 = new Compra(3,[{cod:'1313', qtd:1},{cod:'2112', qtd:1}]);
-        // console.log(compra1, "COMPRA1111");
+        
+        const usuario1 = 1;
+        const lista1 = [{cod:'1122', qtd:2},{cod:'5512', qtd:1}]; 
+        const compra1 = new Compra(usuario1, lista1);
+
         expect(compra1).toBeInstanceOf(Compra);
 
-        console.log("FINFIA é HEXA", Compra.listaTotalCompras);
-        console.log(JSON.stringify(Compra.listaTotalCompras[0].listaCompra));
+        expect(Compra.listaTotalCompras.length).toBe(1);
         
+        expect(Compra.totalPontos).toBe(27);
     });
 
     test('Cliente não existe', () => {
@@ -40,8 +38,31 @@ describe('Modulo da Compra', () => {
         expect(() => new Compra(1,[{cod:'1122', qtd:2},{cod:'0000', qtd:1}])).toThrow('Código de produto inexistente');
     });
 
-    // tem cliente cadastrado? 
-    //tem algum produto na compra? 
+    test('Criando lista de compra com codigo do cliente e lista de pedidos', () => {
+        const usuario2 = 2;
+        const lista2 = [{cod:'1313', qtd:1}]; 
+        const compra2 = new Compra(usuario2, lista2);
+
+        const usuario3 = 3; 
+        const lista3 = [{cod:'1313', qtd:1},{cod:'2112', qtd:1}]
+        const compra3 = new Compra(usuario3, lista3);
+
+        console.table(Compra.listaTotalCompras);
+
+        console.log("Cliente 1 - Lista de produtos");
+        console.table(Compra.listaTotalCompras[0].cliente);
+        console.table( JSON.parse(JSON.stringify(Compra.listaTotalCompras[0].listaCompra)) );
+        console.log("Cliente 2 - Lista de produtos");
+        console.table(Compra.listaTotalCompras[1].cliente);
+        console.table( JSON.parse(JSON.stringify(Compra.listaTotalCompras[1].listaCompra)) );
+        console.log("Cliente 3 - Lista de produtos");
+        console.table(Compra.listaTotalCompras[2].cliente);
+        console.table( JSON.parse(JSON.stringify(Compra.listaTotalCompras[2].listaCompra)) );
+
+        expect(Compra.listaTotalCompras.length).toBe(3);
+
+        expect(Compra.totalPontos).toBe(27 + 13 + 15);
+    });
 
 
 });
