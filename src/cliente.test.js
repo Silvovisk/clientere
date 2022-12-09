@@ -6,9 +6,8 @@ describe('Modulo do Cliente', () => {
     //     jest.clearAll;
     //   });
 
-
     test('Não deve criar a instância do Cliente se não passar os parâmetros', () => {
-        expect(() => new Cliente()).toThrow('Dados inválidos');
+        expect(() => new Cliente()).toThrow("Dados inválidos");
     });
 
     test('Criou o Cliente com o nome, telefone e bairro', () => {
