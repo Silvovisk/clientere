@@ -28,7 +28,6 @@ export class Compra {
         //push
         this.#addCompra(this);
         this.#somaTotalPontos();
-
     }
 
     #addCompra(novoCompra){

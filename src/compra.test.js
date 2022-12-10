@@ -2,8 +2,6 @@ import { Cliente } from "./cliente.js";
 import { Compra } from "./compra.js";
 import { Produto } from "./produto.js";
 
-
-
 describe('Modulo da Compra', () => {
     //antes de todos os testes vou exercutar isso
     beforeAll(() => {
@@ -60,9 +58,9 @@ describe('Modulo da Compra', () => {
         console.table( JSON.parse(JSON.stringify(Compra.listaTotalCompras[2].listaCompra)) );
 
         expect(Compra.listaTotalCompras.length).toBe(3);
-
-        expect(Compra.totalPontos).toBe(27 + 13 + 15);
     });
 
-
+    test('Atingiu o minimo de 80 pontos para passar o pedido', () => {
+        expect(Compra.totalPontos).toBe(80);
+    });
 });

@@ -2,10 +2,6 @@ import{Cliente} from "./cliente.js"
 
 describe('Modulo do Cliente', () => {
 
-    // beforeEach(() => {
-    //     jest.clearAll;
-    //   });
-
     test('Não deve criar a instância do Cliente se não passar os parâmetros', () => {
         expect(() => new Cliente()).toThrow("Dados inválidos");
     });
@@ -27,7 +23,6 @@ describe('Modulo do Cliente', () => {
         console.log(Cliente);
     });
 
-    
 });
 
 

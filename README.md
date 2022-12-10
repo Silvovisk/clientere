@@ -2,10 +2,6 @@
 
 <h1 align="center">C L I E N T E R E</h1>
 
-<div align="center">
-  <img width="300" height="300" src="img/logo.png" alt="logo natal feliz das crianças"/>
-</div>
-
 Projeto Final do Curso de Imersão JS - Reprograma
 
 ## Protosta
