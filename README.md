@@ -1,5 +1,11 @@
-# Sistema de cadastro de clientes e produtos
-# C L I E N T E R E
+<h1 align="center">Sistema de cadastro de clientes e produtos</h1>
+
+<h1 align="center">C L I E N T E R E</h1>
+
+<div align="center">
+  <img width="300" height="300" src="img/logo.png" alt="logo natal feliz das crianças"/>
+</div>
+
 Projeto Final do Curso de Imersão JS - Reprograma
 
 ## Protosta
@@ -12,6 +18,10 @@ Tendo em vista a necessidade da minha mãe em otimizar o trabalho de revenda de 
 Minha mãe é revendedora de catalogos e diversos itens, onde passa horas e horas folheandos os catálogos e separando os pedidos para enviar aos fornecedores. 
 
 Esse processo é repetido diversas vezes por ciclos para realizar o envio destes pedidos, e para separar os produtos por clientes quando eles chegam, até a sua entrega. 
+
+<div align="center">
+  <img width="300" height="300" src="src\img\folhar.jpg" alt="imagens de várias revistas abertas"/>
+</div>
 
 ## Detalhes técnicos do projeto
 
