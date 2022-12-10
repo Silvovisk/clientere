@@ -1,4 +1,3 @@
-
 # Sistema de cadastro de clientes e produtos
 # C L I E N T E R E
 Projeto Final do Curso de Imersão JS - Reprograma
@@ -24,16 +23,8 @@ Também utilizei as premissas do Código Limpo (Clean Code) para facilita a leit
 Linguagens utilizadas: 
 - JavaScript
 - Jest
+- Node.js
 
-
-## Classe Cliente 
-
-## Classe Compra
-
-## Classe Produto
-
-
-## Para o futuro, melhorias 
 
 
 
